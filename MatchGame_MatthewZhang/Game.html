@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jake The Dog Match Game</title>
+		<link rel="icon" type="image/x-icon" href="images\jtd.webp" />
+		<style></style>
+		<link rel = "stylesheet" href = "styles.css" />
+		<script src="script.js"></script>
+	</head>
+	<body onload="initialize();">
+        <div class="topnav">
+            <a href="Match_Game_MatthewZhang.html">Instructions</a>
+            <a class="active" href="Game.html">Game</a>
+        </div>
+        <div class = "game">
+            <div class = "gameInfo">
+                <h1><span id = "win"></span></h1>
+            </div>
+        </div>
+        <div class = "container">
+            <div class = "card">
+                <div class = "cardBack cardFace">
+                    <img class = "back cardValue" src = "images\back.png">
+                </div>
+                <div class = "cardFront cardFace">
+                    <img class = "cv" src = "images\christmasjake.jpg">
+                </div>
+            </div>
+            <div class = "card">
+                <div class = "cardBack cardFace">
+                    <img class = "back cardValue" src = "images\back.png">
+                </div>
+                <div class = "cardFront cardFace">
+                    <img class = "cv" src = "images\christmasjake.jpg">
+                </div>
+            </div>
+            <div class = "card">
+                <div class = "cardBack cardFace">
+                    <img class = "back cardValue" src = "images\back.png">
+                </div>
+                <div class = "cardFront cardFace">
+                    <img class = "cv" src = "images\finnjake.jpg">
+                </div>
+            </div>
+            <div class = "card">
+                <div class = "cardBack cardFace">
+                    <img class = "back cardValue" src = "images\back.png">
+                </div>
+                <div class = "cardFront cardFace">
+                    <img class = "cv" src = "images\finnjake.jpg">
+                </div>
+            </div>
+            <div class = "card">
+                <div class = "cardBack cardFace">
+                    <img class = "back cardValue" src = "images\back.png">
+                </div>
+                <div class = "cardFront cardFace">
+                    <img class = "cv" src = "images\goofyjake.jpg">
+                </div>
+            </div>
+            <div class = "card">
+                <div class = "cardBack cardFace">
+                    <img class = "back cardValue" src = "images\back.png">
+                </div>
+                <div class = "cardFront cardFace">
+                    <img class = "cv" src = "images\goofyjake.jpg">
+                </div>
+            </div>
+            <div class = "card">
+                <div class = "cardBack cardFace">
+                    <img class = "back cardValue" src = "images\back.png">
+                </div>
+                <div class = "cardFront cardFace">
+                    <img class = "cv" src = "images\icekingjake.jpg">
+                </div>
+            </div>
+            <div class = "card">
+                <div class = "cardBack cardFace">
+                    <img class = "back cardValue" src = "images\back.png">
+                </div>
+                <div class = "cardFront cardFace">
+                    <img class = "cv" src = "images\icekingjake.jpg">
+                </div>
+            </div>
+            <div class = "card">
+                <div class = "cardBack cardFace">
+                    <img class = "back cardValue" src = "images\back.png">
+                </div>
+                <div class = "cardFront cardFace">
+                    <img class = "cv" src = "images\jake.jpg">
+                </div>
+            </div>
+            <div class = "card">
+                <div class = "cardBack cardFace">
+                    <img class = "back cardValue" src = "images\back.png">
+                </div>
+                <div class = "cardFront cardFace">
+                    <img class = "cv" src = "images\jake.jpg">
+                </div>
+            </div>
+            <div class = "card">
+                <div class = "cardBack cardFace">
+                    <img class = "back cardValue" src = "images\back.png">
+                </div>
+                <div class = "cardFront cardFace">
+                    <img class = "cv" src = "images\mouthopenjake.jpg">
+                </div>
+            </div>
+            <div class = "card">
+                <div class = "cardBack cardFace">
+                    <img class = "back cardValue" src = "images\back.png">
+                </div>
+                <div class = "cardFront cardFace">
+                    <img class = "cv" src = "images\mouthopenjake.jpg">
+                </div>
+            </div>
+            <div class = "card">
+                <div class = "cardBack cardFace">
+                    <img class = "back cardValue" src = "images\back.png">
+                </div>
+                <div class = "cardFront cardFace">
+                    <img class = "cv" src = "images\restingjake.jpg">
+                </div>
+            </div>
+            <div class = "card">
+                <div class = "cardBack cardFace">
+                    <img class = "back cardValue" src = "images\back.png">
+                </div>
+                <div class = "cardFront cardFace">
+                    <img class = "cv" src = "images\restingjake.jpg">
+                </div>
+            </div>
+            <div class = "card">
+                <div class = "cardBack cardFace">
+                    <img class = "back cardValue" src = "images\back.png">
+                </div>
+                <div class = "cardFront cardFace">
+                    <img class = "cv" src = "images\tinyjake.jpg">
+                </div>
+            </div>
+            <div class = "card">
+                <div class = "cardBack cardFace">
+                    <img class = "back cardValue" src = "images\back.png">
+                </div>
+                <div class = "cardFront cardFace">
+                    <img class = "cv" src = "images\tinyjake.jpg">
+                </div>
+            </div>
+        </div>
+        <div class = "game">
+            <div class = "gameInfo">
+                <b><div id = "encouragement"></div></b>
+            </div>
+            <div class = "gameInfo">
+                <b>Flips: <span id = "flips">0</span></b>
+            </div>
+            <div class = "gameInfo">
+                <button onclick="reset();">Reset Game</button>
+            </div>
+        </div>
+        </body>
+	</body>
+</html>

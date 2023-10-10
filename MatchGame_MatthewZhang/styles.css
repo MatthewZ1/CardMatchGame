@@ -1,0 +1,115 @@
+body {
+    background-color: lightblue;
+  }
+.topnav {
+    background-color: #003A6B;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.topnav a {
+    float: left;
+    color: #ddd;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+.topnav a.active {
+    
+    background-color: #6EB1D6;
+    color: white;
+  }
+img{
+    width: 125px;
+    height: 125px;
+}
+
+.gameInfo{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5em;
+  justify-content: center;
+  text-align: center;
+}
+
+.card{
+  position: relative;
+  height: 125px;
+  width: 125px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  margin: 50px;
+  justify-content: center;
+  perspective: 500px;
+}
+
+.game{
+  grid-column: 1/-1;
+}
+
+.cardFace{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  backface-visibility: hidden;
+  border-width: 1px;
+  border-style: solid;
+  transition: transform 500ms ease-in-out;
+
+}
+
+.card.visible .cardBack{
+  transform: rotateY(-180deg);
+}
+
+.card.visible .cardFront{
+  transform: rotateY(0);
+}
+
+.cardBack{
+  background-color: black;
+}
+
+.cardFront{
+  transform: rotateY(180deg);
+}
+
+.cardBack:hover .cardValue{
+  transform: scale(1);
+}
+
+.cardValue{
+  transition: transform 100ms ease-in-out;
+  transform: scale(0.9);
+}
+
+.info{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5em;
+  justify-content: center;
+  text-align: center;
+  color: white
+}
+
+.infoContainer{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 40px 60px;
+  background: #003A6B;
+  border-radius: 30px;
+}
